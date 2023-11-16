@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>welcome to my restaurant</title>
+	<!--using external css-->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!--reference link using for font icon like menu icon why we use this referal show the icon -->
+	<link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<!--header section starting-->
+	<header>
+		<div class="navbar">
+			
+
+			<div class="logo">
+				<a href="restaurant.html"><!--if you click logo icon you go to website page so i am use link-->
+					<img src="logo2.png" alt="restaurant.logo"> </a>
+			</div>
+			<!--menubar icon using mobile views-->
+			<div class="menubut">
+				<i id="open_menu" class="fa fa-bars" aria-hidden="true" onclick="show_menubar()" ></i><!-- here we are using javascript concept-->
+				<!--we using inline style this line because hide the close icon-->
+				<i id="close_menu" class="fa fa-times" aria-hidden="true" style="display: none;" onclick="close_menubar()"></i>
+			</div>
+
+			<div id="hole_cont" class="menubar">
+				<a href="">Home</a>
+				<a href="#about_us">About Us</a>
+				<a href="">Menu</a>
+				<div class="dd">
+				<a href="#services">Services</a>
+				<div class="dd-con">
+					<a href="">Quick Service</a>
+					<a href="">Fine Dining</a>
+					<a href="">Fast Causal</a>
+					<a href="">Causal Dining</a>
+				</div>
+			</div>
+				<a href="#contact-us">Contact us</a>
+			<a href="#resrevation"><button class="but">Resrevation</button></a>	
+			</div>
+		</div>
+	</header>
+	<!--here we using javascript only for mobile views-->
+	<script type="text/javascript">
+		function show_menubar(){
+			document.getElementById('hole_cont').style.display="block";
+			document.getElementById('close_menu').style.display="block";
+			document.getElementById('open_menu').style.display="none";
+		}
+		function close_menubar(){
+			document.getElementById('hole_cont').style.display="none";
+			document.getElementById('close_menu').style.display="none";
+			document.getElementById('open_menu').style.display="block";
+
+		}
+
+
+	</script>
+
+<!--header section over-->
+<!--banner image section begin-->
+<section class="img">
+	<picture>
+		<source srcset="mobileview.jpg" media="(max-width:767px)">
+<img src="banner2.avif" style="width: 100%; heigth: 400px;">
+</picture>
+</section>
+<!--banner image section end-->
+<!--about us section begin-->
+<section id="about_us" class="about-us">
+	<center><h1 class="about-header">About Us</h1></center>
+	<div class="about-us-content">
+	<div class="about-video">
+			<video style="width:600px; height: 300px;" autoplay muted><source src="video.mp4" type="video/mp4"></video>
+	</div>
+	<div class="about-content">
+		<p>A chicken is only as good as its ingredients. That's why we import our spices and use top-quality ingredients in each of our Nashville Hot Chicken tenders, as well as our other offerings.
+			We pride ourselves in following the traditional Hot Chicken seasonings and processes used in Nashville, the birthplace of Hot Chicken. From dry spice to the classic hot oil, our Hot Chicken is as Nashvillian as it gets!
+		</p>
+	</div>
+</div>
+</section>
+<!--about us section end-->
+<!--our service section begin-->
+<section id="services" class="our-services">
+	<center><h1>Our Services</h1></center>
+	<div class="our-container" >
+		<div class="service-detail">
+			<div class="service-icon">
+			<img src="our/images.svg" width="100px" height="100px">
+			</div>
+			<div class="icon-detail">
+				<h5>Quick service</h5>
+				<p>A restaurant that efficiently serves inexpensive meals that are always prepared in a uniform way.</p>
+				<center><a href=""><button class="ser-but">Read More</button></a></center>
+			</div>
+		</div>
+		<div class="service-detail">
+			<div class="service-icon">
+			<img src="our/fine-dining.svg" width="100px" height="100px">
+			</div>
+			<div class="icon-detail">
+				<h5>Fine Dining</h5>
+				<p>A higher quality and greater formality compared to the experience at a casual dining restaurant</p>
+				<center><a href=""><button class="ser-but">Read More</button></a></center>
+			</div>
+		</div>
+		<div class="service-detail">
+			<div class="service-icon">
+			<img src="our/fast-causal.svg" width="100px" height="100px">
+			</div>
+			<div class="icon-detail">
+				<h5>Fast Causal</h5>
+				<p>typically a self-service restaurant offering a focused menu of freshly made-to-order meals.</p>
+				<center><a href=""><button class="ser-but">Read More</button></a></center>
+			</div>
+		</div>
+		<div class="service-detail">
+			<div class="service-icon">
+			<img src="our/casual.svg" width="100px" height="100px">
+			</div>
+			<div class="icon-detail">
+				<h5>Causal Dining</h5>
+				<p>A full-service concept with a laid-back, comfortable, family-friendly ambiance and an affordable menu</p>
+				<center><a href=""><button class="ser-but">Read More</button></a></center>
+			</div>
+		</div>
+		<div class="service-detail">
+			<div class="service-icon">
+			<img src="our/delivery.svg" width="100px" height="100px">
+			</div>
+			<div class="icon-detail">
+				<h5>Home Delivery</h5>
+				<p>A courier service in which a restaurant, store, or independent food-delivery company delivers food to a customer.</p>
+				<center><a href=""><button class="ser-but">Read More</button></a></center>
+			</div>
+		</div>
+	</div>
+
+</section>
+<!--our section end-->
+<!--chef detail start-->
+<section class="chef-section">
+	<center><h1>CHEF DETAIL</h1></center>
+	<div class="chef-containe">
+		<div class="chef-detail">
+			<div class="chef-icon">
+			<img src="chef1.jpg" width="200px" height="200px">
+			</div>
+			<div class="chef-icon-detail">
+				<h5>K. Damodharan</h5>
+				<p>Veg&Non-Veg</p>
+				<center><a href="" style="text-decoration: none;"><i class="fa fa-youtube" style="font-size: 20px; color: darkred;"></i></center>
+					<br>
+				<center><a href=""><button class="chef-but">View More</button></a></center>
+			</div>
+		</div>
+		<div class="chef-detail">
+			<div class="chef-icon">
+			<img src="chef2.jpg" width="200px" height="200px">
+			</div>
+			<div class="chef-icon-detail">
+				<h5>Venkatesh Bhat</h5>
+				<p>Veg</p>
+				<center><a href="" style="text-decoration: none;"><i class="fa fa-youtube" style="font-size: 20px; color: darkred;"></i></center>
+					<br>
+				<center><a href=""><button class="chef-but">View More</button></a></center>
+			</div>
+		</div>
+		<div class="chef-detail">
+			<div class="chef-icon">
+			<img src="chef3.jpg" width="200px" height="200px">
+			</div>
+			<div class="chef-icon-detail">
+				<h5>Deena Dhayalan</h5>
+				<p>Veg&Non-Veg</p>
+				<center><a href="" style="text-decoration: none;"><i class="fa fa-youtube" style="font-size: 20px; color: darkred;"></i></center>
+					<br>
+				<center><a href=""><button class="chef-but">View More</button></a></center>
+			</div>
+		</div>
+	</div>
+</section>
+<!--chef section end-->
+<!--contact us being-->
+<section id="contact-us" class="contact-us">
+<center><h1 class="contact-header">Contact Us</h1></center>
+	<div class="contact-us-content">
+	<div class="contact-map">
+			<iframe height="200px" width="500px"  ;class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps? hl=en&amp;q=11.103037, 79.649648&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+			<address style="font-size: 20px;">
+				<i class="fa fa-map-marker" aria-hidden="true"></i>Mayiladuthurai,TamilNadu
+				<br><br>
+				<a href="tel:+919988556743" style="text-decoration: none;"><i class="fa fa-mobile" aria-hidden="true"></i>+91 9988556743</a>
+				<br><br>
+				<a href="mailto:restaurant@gmail.com" style="text-decoration: none;"><i class="fa fa-envelope" aria-hidden="true"></i>restaurant@gmail.com</a>
+			</address>
+	</div>
+	<div id="resrevation" class="contact-content">
+		<h1>Table Booking</h1>
+		<button><a href="resvertation.html"  style="text-decoration:none;" target="_blank">Reservation</a></button>
+	</div>
+</div>	
+</section>
+<!--contact us end-->
+<!--Footer section begins-->
+<footer>
+	<div class="column-about">
+		<div class="footer-about">
+			<h3>welcome to my restaurant</h3>
+			<p>One thing I always say is being a great chef today is not enough – you have to be a great businessman</p>
+		<div class="social">
+			<a href=""><i class="fa fa-facebook"></i> </a>
+			<a href=""><i class="fa fa-instagram"></i> </a>
+			<a href=""><i class="fa fa-youtube"></i> </a>
+			<a href=""><i class="fa fa-twitter"></i> </a>
+		</div>
+		</div>
+	<div class="link-coloum">
+		<ul>
+			<h3>Quick Link</h3>
+		<li><a href="">F.A.Q</a></li>
+		<li><a href="">Privacy Policy</a></li>
+		<li><a href="">Terms & Condition</a></li>
+		<li><a href="">Booking Policy</a></li>
+		</ul>
+	</div>
+	<div class="link-coloum">
+		<ul>
+			<h3>Our Pages</h3>
+		<li><a href="">Home</a></li>
+		<li><a href="">About Us</a></li>
+		<li><a href="">Services</a></li>
+		<li><a href="">Contact us</a></li>
+		</ul>
+	</div>
+	<div class="subscribe-column">
+		<form>
+			<h3>NewsLetter</h3>
+		<input type="emailid" placeholder="Enter Your Email" />
+		<button class="sub">Subscribe</button>
+	</form>
+	</div>
+	<div class="copyright">
+		<center>
+			<p>copyright &copy; Ananda Restaurant All Right Rserved</p>
+		</center>
+	</div>
+	</div>
+</footer>
+</body>
+</html>

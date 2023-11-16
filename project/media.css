@@ -1,0 +1,20 @@
+/*extra small device(phone, 600px and dwon)*/
+@media only screen and (max-width:600px){
+	.about-header {color:red;}
+} 
+/*small device(portiat tablets and large phone,600px */
+	@media only screen and (min-width:600px){
+		.about-header{color: green;}
+	}
+/*medium device(landscape tablets and 768px and up)*/
+@media only screen and (min-width:768px){
+	.about-header{color: yellow;}
+}
+/*large device(laptop/desktop 997 and up*/
+	@media only scree and (min-width:997px){
+		.about-header{color: blue;}
+	}
+/*extra large device(largelaptop, destop and 1200px and up)*/
+@media only screen and (min-width:1200px){
+	.about-header{color: brown;}
+}

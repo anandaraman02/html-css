@@ -1,0 +1,375 @@
+*{
+box-sizing: border-box;
+}
+header
+{
+height: 100px;/*reperesent the menubar heigth and width */
+width: 100%;
+background-color: lightseagreen;
+position: sticky;
+top: 0;
+}
+.logo{
+	
+	display: inline;
+}
+.logo a img{
+width: 150px;
+height: 100px;
+
+}
+.menubar
+{
+	display: inline;
+	float: right;
+	font-size: 18px;
+	padding: 40px;
+}
+.menubar a /*here why using (a) tag because we using home menu...etc we give the css style*/
+{
+	padding: 10px;/*padding using for inbetween gap produced*/
+text-decoration: none;/*text decoration using for remove under line*/
+
+}
+.but
+{
+padding: 5px;
+border-radius: 5px;
+
+}
+.menubar a:hover /*The :hover selector is used to select elements when you mouse over them.*/
+{
+	background-color: lightpink;
+	color: white;
+
+}
+.but:hover
+{
+background-color: lightpink;
+border-color: ghostwhite;
+cursor: pointer;
+}
+.dd
+{
+	display: inline-block;
+}
+
+.dd-con{
+	display: none;
+position: absolute;
+}
+.dd-con a {
+display: block;
+background-color: burlywood;
+border-bottom: 1px solid black;
+}
+/*Show and hide a "dropdown" menu on mouse hover:*/
+.dd:hover
+.dd-con
+{
+display: block;
+}
+/*using for mobile views*/
+.menubut{
+display: none;
+}
+
+
+/*About us*/
+.about-us{
+
+
+}
+.about-header{
+
+}
+.about-us-content{
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+}
+.about-video{
+
+}
+.about-content{
+	text-align: justify;
+font-size: 20px;
+line-height: 1.6;
+}
+/*our services*/
+.our-services{
+padding: 5px 100px;
+background-image: url("background.avif");
+opacity: 0.9;
+font-weight: bolder;
+}
+.our-container{
+	
+}
+.our-container  img:hover,h5:hover{
+ background-color: mediumvioletred;
+}
+.service-detail{
+	display: inline-block;
+	width: 30%;
+	border: 1px solid black;
+	margin-bottom: 15px;
+	padding: 25px;
+	border-radius: 5px;
+	margin-left: 9px;
+}
+.service-icon{
+ text-align: center;
+ 
+}
+.icon-detail h5{
+	text-align: center;
+}
+.ser-but{
+	cursor: pointer;
+	text-align: center;
+	border-radius: 5px;
+}
+/*chef detail*/
+.chef-section{
+	padding: 5px 100px;
+
+
+}
+.chef-containe{
+
+}
+.chef-detail{
+	display: inline-block;
+	width: 30%;
+	border: 1px solid black;
+	margin-bottom: 15px;
+	padding: 20px;
+	background-color: black;
+	color: white;
+
+}
+.chef-icon{
+	text-align: center;
+	overflow: hidden;
+	border-radius: 50%;
+
+}
+.chef-icon img{
+border-radius: 50%;
+}
+.chef-icon img:hover{
+	transform:scale(0.8) ;
+}
+.chef-icon-detail h5,p{
+	text-align: center;
+
+}
+.chef-but{
+cursor: pointer;
+}
+/*chef section end*/
+/*Contact us start*/
+.contact-us{
+padding:30px;
+background-color: #C467C2;
+}
+.contact-header{
+
+}
+.contact-us-content{
+	display: grid;
+grid-template-columns: 1fr 1fr;
+
+}
+.contact-map{
+
+}
+.contact-content h1,button{
+	
+	padding: 10px;
+	border-radius: 5px;
+
+}
+.contact-content button:hover
+{
+	background-color: slategray;
+
+}
+/*Contact section end*/
+/*Footer section start */
+footer{
+	background-color: slategray;
+	font-size: 16px;
+
+}
+.column-about{
+	padding: 20px;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	align-items: stretch;
+}
+h3{
+	width: 100%;
+	text-align: left;
+	color: white;
+}
+ul{
+	list-style: none;
+	display: flex;
+	flex-direction: column;
+}
+ul li{
+	padding: 10px;
+}
+ul li a{
+	color: red;
+	text-decoration: none;
+
+}
+ul li a:hover{
+ 	color: yellow;
+}
+input,
+.sub{
+	font-size: 1em;
+	padding: 1em;
+	width: 100%;
+	border-radius: 5px;
+	margin-bottom: 5px;
+}
+.sub{
+	background-color: #c7940a;
+	color: #ffffff;
+}
+.sub:hover {
+	cursor: pointer;
+}
+div.social{
+	display: flex;
+	justify-content: space-around;
+	font-size: 2.4em;
+	flex-direction: row;
+	margin-top: 0.5em;
+}
+.social i{
+ color: #bac6d9;
+}
+.copyright{
+padding: 5px;
+background-color: #25262e;
+}
+.copyright p{
+font-size: 0.9em;
+}
+/*animation for social icon*/
+.social a:hover{
+	animation: rotation 5s infinite linear;
+	border-radius: 10%;
+	border: 2px solid white;
+}
+@keyframes rotation
+{
+	from
+	{
+		transform: rotate(0deg);
+	}
+	to
+	{
+		transform: rotate(360deg);
+	}
+
+}
+
+
+/*media query starting*/
+/*mediaquery*/
+@media(max-width:700px)
+{
+ .menubut{
+position: absolute;
+display: inline-block;
+right: 0px;
+padding: 25px;
+ }
+.navbar .menubar
+{
+	display: none;
+background-color: skyblue;
+text-align: center;
+padding: 10px;
+margin-top: 40px;
+margin-right: 20px;
+position: absolute;
+right: 0px;
+top: 15px;
+}
+.menubut:hover{
+	cursor: pointer;
+}
+.navbar .menubar  a
+{
+display: block;
+}
+}
+.video{
+height: 200px;
+width: 200px;
+}
+
+/*media query for about us*/
+/*extra small device(phone, 600px and dwon)*/
+@media only screen and (max-width:600px){
+	.about-header {color:red;}
+	.about-us-content{
+		grid-template-columns: 1fr;
+	}
+	.about-video source{
+		width: 100%;
+	}
+	/*our service mobile view*/
+	.service-detail{
+		width: 100%;
+	}
+	/*chef detail mobile view*/
+	.chef-detail{
+		width: 100%;
+	}
+	.contact-us-content{
+		grid-template-columns: 1fr;
+	}
+	.column-about{
+	grid-template-columns: 1fr;
+}
+} 
+/*small device(portiat tablets and large phone,600px */
+	@media only screen and (min-width:600px){
+		.about-header{color: green;}
+		.about-us-content{
+		grid-template-columns: 1fr;
+	}
+	.about-video source{
+		width: 100%;
+	}
+	
+
+	}
+/*medium device(landscape tablets and 768px and up)*/
+@media only screen and (min-width:768px){
+	.about-header{color: yellow;}
+	.about-us-content{
+		grid-template-columns: 1fr 1fr;
+	}
+	.about-video source{
+		width: 100%;
+	}
+
+}
+/*large device(laptop/desktop 997 and up*/
+	@media only scree and (min-width:997px){
+		.about-header{color: blue;}
+	}
+/*extra large device(largelaptop, destop and 1200px and up)*/
+@media only screen and (min-width:1200px){
+	.about-header{color: brown;}
+}
