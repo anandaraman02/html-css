@@ -1,0 +1,41 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Add this style to center the card horizontally */
+body{
+    background-color:  rgb(213, 232, 243);
+    font-family: 'Outfit', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+h3{
+    font-size: 15px;
+    padding: 30px; 
+    margin-top: -30px; 
+}
+
+p{
+    margin-top: -30px;
+    font-size: 15px;
+    padding: 10px;
+    color: gray;
+}
+
+img{
+    width: 200px;
+    height: 200px;
+    border-radius: 25px;
+    padding: 15px;
+}
+.card{
+    background-color:white ;
+    width: 240px;
+    height: 370px;
+    border-radius: 11px;
+   text-align: center;/* Add this style to center the card vertically */
+   
+}
